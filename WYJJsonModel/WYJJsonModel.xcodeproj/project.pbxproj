@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		839026E11E2C98F3000F8952 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 839026E01E2C98F3000F8952 /* main.m */; };
+		839026E41E2C98F3000F8952 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 839026E31E2C98F3000F8952 /* AppDelegate.m */; };
+		839026E71E2C98F3000F8952 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839026E61E2C98F3000F8952 /* ViewController.m */; };
+		839026EA1E2C98F3000F8952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839026E81E2C98F3000F8952 /* Main.storyboard */; };
+		839026EC1E2C98F3000F8952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839026EB1E2C98F3000F8952 /* Assets.xcassets */; };
+		839026EF1E2C98F3000F8952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839026ED1E2C98F3000F8952 /* LaunchScreen.storyboard */; };
+		839026FA1E2C98F4000F8952 /* WYJJsonModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839026F91E2C98F4000F8952 /* WYJJsonModelTests.m */; };
+		839027051E2C98F4000F8952 /* WYJJsonModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839027041E2C98F4000F8952 /* WYJJsonModelUITests.m */; };
+		839027151E2C9A04000F8952 /* WYJJsonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 839027131E2C9A04000F8952 /* WYJJsonObject.m */; };
+		839027181E2C9C1A000F8952 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 839027171E2C9C1A000F8952 /* ClassModel.m */; };
+		8390271B1E2C9C25000F8952 /* StudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8390271A1E2C9C25000F8952 /* StudentModel.m */; };
+		8390271E1E2C9CE6000F8952 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8390271D1E2C9CE6000F8952 /* Teacher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		839026F61E2C98F4000F8952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839026D41E2C98F3000F8952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839026DB1E2C98F3000F8952;
+			remoteInfo = WYJJsonModel;
+		};
+		839027011E2C98F4000F8952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 839026D41E2C98F3000F8952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 839026DB1E2C98F3000F8952;
+			remoteInfo = WYJJsonModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		839026DC1E2C98F3000F8952 /* WYJJsonModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYJJsonModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		839026E01E2C98F3000F8952 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		839026E21E2C98F3000F8952 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		839026E31E2C98F3000F8952 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		839026E51E2C98F3000F8952 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		839026E61E2C98F3000F8952 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		839026E91E2C98F3000F8952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		839026EB1E2C98F3000F8952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		839026EE1E2C98F3000F8952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		839026F01E2C98F3000F8952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839026F51E2C98F4000F8952 /* WYJJsonModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYJJsonModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		839026F91E2C98F4000F8952 /* WYJJsonModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYJJsonModelTests.m; sourceTree = "<group>"; };
+		839026FB1E2C98F4000F8952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839027001E2C98F4000F8952 /* WYJJsonModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYJJsonModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		839027041E2C98F4000F8952 /* WYJJsonModelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYJJsonModelUITests.m; sourceTree = "<group>"; };
+		839027061E2C98F4000F8952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839027131E2C9A04000F8952 /* WYJJsonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYJJsonObject.m; sourceTree = "<group>"; };
+		839027141E2C9A04000F8952 /* WYJJsonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYJJsonObject.h; sourceTree = "<group>"; };
+		839027161E2C9C1A000F8952 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
+		839027171E2C9C1A000F8952 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
+		839027191E2C9C25000F8952 /* StudentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentModel.h; sourceTree = "<group>"; };
+		8390271A1E2C9C25000F8952 /* StudentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentModel.m; sourceTree = "<group>"; };
+		8390271C1E2C9CE6000F8952 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		8390271D1E2C9CE6000F8952 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		839026D91E2C98F3000F8952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839026F21E2C98F4000F8952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839026FD1E2C98F4000F8952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		839026D31E2C98F3000F8952 = {
+			isa = PBXGroup;
+			children = (
+				839026DE1E2C98F3000F8952 /* WYJJsonModel */,
+				839026F81E2C98F4000F8952 /* WYJJsonModelTests */,
+				839027031E2C98F4000F8952 /* WYJJsonModelUITests */,
+				839026DD1E2C98F3000F8952 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		839026DD1E2C98F3000F8952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				839026DC1E2C98F3000F8952 /* WYJJsonModel.app */,
+				839026F51E2C98F4000F8952 /* WYJJsonModelTests.xctest */,
+				839027001E2C98F4000F8952 /* WYJJsonModelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		839026DE1E2C98F3000F8952 /* WYJJsonModel */ = {
+			isa = PBXGroup;
+			children = (
+				839027121E2C9944000F8952 /* WYJJSONObject */,
+				839026E21E2C98F3000F8952 /* AppDelegate.h */,
+				839026E31E2C98F3000F8952 /* AppDelegate.m */,
+				839026E51E2C98F3000F8952 /* ViewController.h */,
+				839026E61E2C98F3000F8952 /* ViewController.m */,
+				839027161E2C9C1A000F8952 /* ClassModel.h */,
+				839027171E2C9C1A000F8952 /* ClassModel.m */,
+				839027191E2C9C25000F8952 /* StudentModel.h */,
+				8390271A1E2C9C25000F8952 /* StudentModel.m */,
+				8390271C1E2C9CE6000F8952 /* Teacher.h */,
+				8390271D1E2C9CE6000F8952 /* Teacher.m */,
+				839026E81E2C98F3000F8952 /* Main.storyboard */,
+				839026EB1E2C98F3000F8952 /* Assets.xcassets */,
+				839026ED1E2C98F3000F8952 /* LaunchScreen.storyboard */,
+				839026F01E2C98F3000F8952 /* Info.plist */,
+				839026DF1E2C98F3000F8952 /* Supporting Files */,
+			);
+			path = WYJJsonModel;
+			sourceTree = "<group>";
+		};
+		839026DF1E2C98F3000F8952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				839026E01E2C98F3000F8952 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		839026F81E2C98F4000F8952 /* WYJJsonModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				839026F91E2C98F4000F8952 /* WYJJsonModelTests.m */,
+				839026FB1E2C98F4000F8952 /* Info.plist */,
+			);
+			path = WYJJsonModelTests;
+			sourceTree = "<group>";
+		};
+		839027031E2C98F4000F8952 /* WYJJsonModelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				839027041E2C98F4000F8952 /* WYJJsonModelUITests.m */,
+				839027061E2C98F4000F8952 /* Info.plist */,
+			);
+			path = WYJJsonModelUITests;
+			sourceTree = "<group>";
+		};
+		839027121E2C9944000F8952 /* WYJJSONObject */ = {
+			isa = PBXGroup;
+			children = (
+				839027141E2C9A04000F8952 /* WYJJsonObject.h */,
+				839027131E2C9A04000F8952 /* WYJJsonObject.m */,
+			);
+			path = WYJJSONObject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		839026DB1E2C98F3000F8952 /* WYJJsonModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839027091E2C98F4000F8952 /* Build configuration list for PBXNativeTarget "WYJJsonModel" */;
+			buildPhases = (
+				839026D81E2C98F3000F8952 /* Sources */,
+				839026D91E2C98F3000F8952 /* Frameworks */,
+				839026DA1E2C98F3000F8952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WYJJsonModel;
+			productName = WYJJsonModel;
+			productReference = 839026DC1E2C98F3000F8952 /* WYJJsonModel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		839026F41E2C98F4000F8952 /* WYJJsonModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8390270C1E2C98F4000F8952 /* Build configuration list for PBXNativeTarget "WYJJsonModelTests" */;
+			buildPhases = (
+				839026F11E2C98F4000F8952 /* Sources */,
+				839026F21E2C98F4000F8952 /* Frameworks */,
+				839026F31E2C98F4000F8952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				839026F71E2C98F4000F8952 /* PBXTargetDependency */,
+			);
+			name = WYJJsonModelTests;
+			productName = WYJJsonModelTests;
+			productReference = 839026F51E2C98F4000F8952 /* WYJJsonModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		839026FF1E2C98F4000F8952 /* WYJJsonModelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8390270F1E2C98F4000F8952 /* Build configuration list for PBXNativeTarget "WYJJsonModelUITests" */;
+			buildPhases = (
+				839026FC1E2C98F4000F8952 /* Sources */,
+				839026FD1E2C98F4000F8952 /* Frameworks */,
+				839026FE1E2C98F4000F8952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				839027021E2C98F4000F8952 /* PBXTargetDependency */,
+			);
+			name = WYJJsonModelUITests;
+			productName = WYJJsonModelUITests;
+			productReference = 839027001E2C98F4000F8952 /* WYJJsonModelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		839026D41E2C98F3000F8952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = WYJ;
+				TargetAttributes = {
+					839026DB1E2C98F3000F8952 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S559HV9JXK;
+						ProvisioningStyle = Automatic;
+					};
+					839026F41E2C98F4000F8952 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S559HV9JXK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 839026DB1E2C98F3000F8952;
+					};
+					839026FF1E2C98F4000F8952 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S559HV9JXK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 839026DB1E2C98F3000F8952;
+					};
+				};
+			};
+			buildConfigurationList = 839026D71E2C98F3000F8952 /* Build configuration list for PBXProject "WYJJsonModel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 839026D31E2C98F3000F8952;
+			productRefGroup = 839026DD1E2C98F3000F8952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				839026DB1E2C98F3000F8952 /* WYJJsonModel */,
+				839026F41E2C98F4000F8952 /* WYJJsonModelTests */,
+				839026FF1E2C98F4000F8952 /* WYJJsonModelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		839026DA1E2C98F3000F8952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839026EF1E2C98F3000F8952 /* LaunchScreen.storyboard in Resources */,
+				839026EC1E2C98F3000F8952 /* Assets.xcassets in Resources */,
+				839026EA1E2C98F3000F8952 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839026F31E2C98F4000F8952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839026FE1E2C98F4000F8952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		839026D81E2C98F3000F8952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839026E71E2C98F3000F8952 /* ViewController.m in Sources */,
+				8390271E1E2C9CE6000F8952 /* Teacher.m in Sources */,
+				8390271B1E2C9C25000F8952 /* StudentModel.m in Sources */,
+				839027181E2C9C1A000F8952 /* ClassModel.m in Sources */,
+				839027151E2C9A04000F8952 /* WYJJsonObject.m in Sources */,
+				839026E41E2C98F3000F8952 /* AppDelegate.m in Sources */,
+				839026E11E2C98F3000F8952 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839026F11E2C98F4000F8952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839026FA1E2C98F4000F8952 /* WYJJsonModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839026FC1E2C98F4000F8952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839027051E2C98F4000F8952 /* WYJJsonModelUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		839026F71E2C98F4000F8952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839026DB1E2C98F3000F8952 /* WYJJsonModel */;
+			targetProxy = 839026F61E2C98F4000F8952 /* PBXContainerItemProxy */;
+		};
+		839027021E2C98F4000F8952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 839026DB1E2C98F3000F8952 /* WYJJsonModel */;
+			targetProxy = 839027011E2C98F4000F8952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		839026E81E2C98F3000F8952 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839026E91E2C98F3000F8952 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		839026ED1E2C98F3000F8952 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839026EE1E2C98F3000F8952 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		839027071E2C98F4000F8952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		839027081E2C98F4000F8952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8390270A1E2C98F4000F8952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S559HV9JXK;
+				INFOPLIST_FILE = WYJJsonModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyj.www.WYJJsonModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8390270B1E2C98F4000F8952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S559HV9JXK;
+				INFOPLIST_FILE = WYJJsonModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyj.www.WYJJsonModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8390270D1E2C98F4000F8952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S559HV9JXK;
+				INFOPLIST_FILE = WYJJsonModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyj.www.WYJJsonModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYJJsonModel.app/WYJJsonModel";
+			};
+			name = Debug;
+		};
+		8390270E1E2C98F4000F8952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S559HV9JXK;
+				INFOPLIST_FILE = WYJJsonModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyj.www.WYJJsonModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYJJsonModel.app/WYJJsonModel";
+			};
+			name = Release;
+		};
+		839027101E2C98F4000F8952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S559HV9JXK;
+				INFOPLIST_FILE = WYJJsonModelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyj.www.WYJJsonModelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WYJJsonModel;
+			};
+			name = Debug;
+		};
+		839027111E2C98F4000F8952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S559HV9JXK;
+				INFOPLIST_FILE = WYJJsonModelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyj.www.WYJJsonModelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WYJJsonModel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		839026D71E2C98F3000F8952 /* Build configuration list for PBXProject "WYJJsonModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839027071E2C98F4000F8952 /* Debug */,
+				839027081E2C98F4000F8952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839027091E2C98F4000F8952 /* Build configuration list for PBXNativeTarget "WYJJsonModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8390270A1E2C98F4000F8952 /* Debug */,
+				8390270B1E2C98F4000F8952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8390270C1E2C98F4000F8952 /* Build configuration list for PBXNativeTarget "WYJJsonModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8390270D1E2C98F4000F8952 /* Debug */,
+				8390270E1E2C98F4000F8952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8390270F1E2C98F4000F8952 /* Build configuration list for PBXNativeTarget "WYJJsonModelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839027101E2C98F4000F8952 /* Debug */,
+				839027111E2C98F4000F8952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 839026D41E2C98F3000F8952 /* Project object */;
+}
