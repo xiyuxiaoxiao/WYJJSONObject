@@ -7,5 +7,5 @@
         可以将数组中的模型转化 只要重写-(NSDictionary *)classOfArrayProperty;
     例子：返回数组类型的属性与对应的模型名
     -(NSDictionary *)classOfArrayProperty {
-        return @{@"student":@"StudentModel"};
-        }
+        return @{@"student":@"StudentModel"};
+    }
