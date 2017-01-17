@@ -17,4 +17,10 @@
 -(NSArray *)getOutArray {
     return @[@"classId"];
 }
+
+
+-(NSString *)description {
+    return [NSString stringWithFormat:@" name:%@\n student:\n%@ \n teacher:\n%@", self.name,self.student,self.teacher];
+}
+
 @end

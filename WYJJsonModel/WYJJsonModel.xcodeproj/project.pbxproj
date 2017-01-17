@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		839026E11E2C98F3000F8952 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 839026E01E2C98F3000F8952 /* main.m */; };
 		839026E41E2C98F3000F8952 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 839026E31E2C98F3000F8952 /* AppDelegate.m */; };
-		839026E71E2C98F3000F8952 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839026E61E2C98F3000F8952 /* ViewController.m */; };
 		839026EA1E2C98F3000F8952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839026E81E2C98F3000F8952 /* Main.storyboard */; };
 		839026EC1E2C98F3000F8952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839026EB1E2C98F3000F8952 /* Assets.xcassets */; };
 		839026EF1E2C98F3000F8952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839026ED1E2C98F3000F8952 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,9 @@
 		839027181E2C9C1A000F8952 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 839027171E2C9C1A000F8952 /* ClassModel.m */; };
 		8390271B1E2C9C25000F8952 /* StudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8390271A1E2C9C25000F8952 /* StudentModel.m */; };
 		8390271E1E2C9CE6000F8952 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8390271D1E2C9CE6000F8952 /* Teacher.m */; };
+		839027211E2CA779000F8952 /* jsontext.json in Resources */ = {isa = PBXBuildFile; fileRef = 839027201E2CA779000F8952 /* jsontext.json */; };
+		839027251E2CB4B3000F8952 /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 839027241E2CB4B3000F8952 /* FirstVC.m */; };
+		839027281E2CB4C8000F8952 /* SeconderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 839027271E2CB4C8000F8952 /* SeconderVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +45,6 @@
 		839026E01E2C98F3000F8952 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		839026E21E2C98F3000F8952 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		839026E31E2C98F3000F8952 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		839026E51E2C98F3000F8952 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		839026E61E2C98F3000F8952 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		839026E91E2C98F3000F8952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		839026EB1E2C98F3000F8952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839026EE1E2C98F3000F8952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +63,11 @@
 		8390271A1E2C9C25000F8952 /* StudentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentModel.m; sourceTree = "<group>"; };
 		8390271C1E2C9CE6000F8952 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		8390271D1E2C9CE6000F8952 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		839027201E2CA779000F8952 /* jsontext.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsontext.json; sourceTree = "<group>"; };
+		839027231E2CB4B3000F8952 /* FirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
+		839027241E2CB4B3000F8952 /* FirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
+		839027261E2CB4C8000F8952 /* SeconderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeconderVC.h; sourceTree = "<group>"; };
+		839027271E2CB4C8000F8952 /* SeconderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeconderVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				839027121E2C9944000F8952 /* WYJJSONObject */,
+				839027221E2CB431000F8952 /* Home */,
 				839026E21E2C98F3000F8952 /* AppDelegate.h */,
 				839026E31E2C98F3000F8952 /* AppDelegate.m */,
-				839026E51E2C98F3000F8952 /* ViewController.h */,
-				839026E61E2C98F3000F8952 /* ViewController.m */,
 				839027161E2C9C1A000F8952 /* ClassModel.h */,
 				839027171E2C9C1A000F8952 /* ClassModel.m */,
 				839027191E2C9C25000F8952 /* StudentModel.h */,
@@ -128,6 +132,7 @@
 				839026EB1E2C98F3000F8952 /* Assets.xcassets */,
 				839026ED1E2C98F3000F8952 /* LaunchScreen.storyboard */,
 				839026F01E2C98F3000F8952 /* Info.plist */,
+				8390271F1E2CA74B000F8952 /* Resource */,
 				839026DF1E2C98F3000F8952 /* Supporting Files */,
 			);
 			path = WYJJsonModel;
@@ -166,6 +171,25 @@
 				839027131E2C9A04000F8952 /* WYJJsonObject.m */,
 			);
 			path = WYJJSONObject;
+			sourceTree = "<group>";
+		};
+		8390271F1E2CA74B000F8952 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				839027201E2CA779000F8952 /* jsontext.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		839027221E2CB431000F8952 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				839027231E2CB4B3000F8952 /* FirstVC.h */,
+				839027241E2CB4B3000F8952 /* FirstVC.m */,
+				839027261E2CB4C8000F8952 /* SeconderVC.h */,
+				839027271E2CB4C8000F8952 /* SeconderVC.m */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839027211E2CA779000F8952 /* jsontext.json in Resources */,
 				839026EF1E2C98F3000F8952 /* LaunchScreen.storyboard in Resources */,
 				839026EC1E2C98F3000F8952 /* Assets.xcassets in Resources */,
 				839026EA1E2C98F3000F8952 /* Main.storyboard in Resources */,
@@ -304,11 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839026E71E2C98F3000F8952 /* ViewController.m in Sources */,
+				839027281E2CB4C8000F8952 /* SeconderVC.m in Sources */,
 				8390271E1E2C9CE6000F8952 /* Teacher.m in Sources */,
 				8390271B1E2C9C25000F8952 /* StudentModel.m in Sources */,
 				839027181E2C9C1A000F8952 /* ClassModel.m in Sources */,
 				839027151E2C9A04000F8952 /* WYJJsonObject.m in Sources */,
+				839027251E2CB4B3000F8952 /* FirstVC.m in Sources */,
 				839026E41E2C98F3000F8952 /* AppDelegate.m in Sources */,
 				839026E11E2C98F3000F8952 /* main.m in Sources */,
 			);

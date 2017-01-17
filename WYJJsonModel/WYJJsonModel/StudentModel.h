@@ -9,5 +9,6 @@
 #import "WYJJsonObject.h"
 
 @interface StudentModel : WYJJsonObject
-
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSNumber *age;
 @end

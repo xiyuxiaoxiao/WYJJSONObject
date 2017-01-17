@@ -1,0 +1,16 @@
+{
+    "student": [{
+                    "name": "zhangsan",
+                    "age": 18,
+                    }, {
+                    "name": "lisi",
+                    "age": 17,
+                    }, []
+                ],
+    "teacher": {
+                "name": "YangTeacher",
+                "sex": "男",
+                "cource": "数学"
+                },
+    "name": "二班"
+}

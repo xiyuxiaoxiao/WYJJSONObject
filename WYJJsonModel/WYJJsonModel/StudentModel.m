@@ -9,5 +9,7 @@
 #import "StudentModel.h"
 
 @implementation StudentModel
-
+-(NSString *)description {
+    return [NSString stringWithFormat:@"name:%@ -- age:%@", self.name,self.age];
+}
 @end

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SeconderVC.h
 //  WYJJsonModel
 //
 //  Created by ZSXJ on 2017/1/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SeconderVC : UIViewController
 
 @end
-
