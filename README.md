@@ -9,5 +9,5 @@
     -(NSDictionary *)classOfArrayProperty {
         return @{@"student":@"StudentModel"};
     }
-![Image text](https://github.com/xiyuxiaoxiao/WYJJSONObject/blob/master/images/testData.png)   
+![Image](https://github.com/xiyuxiaoxiao/WYJJSONObject/blob/master/images/testData.png)   
 ![Image text](https://github.com/xiyuxiaoxiao/WYJJSONObject/blob/master/images/modelResut.png)
