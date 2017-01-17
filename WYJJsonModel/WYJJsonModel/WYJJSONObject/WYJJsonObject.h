@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface WYJJsonObject : NSObject
+
++(instancetype)creatWithDict:(NSDictionary *)dict;
 -(void)creatWithDict:(NSDictionary *)dict;
 
 //不解析的属性

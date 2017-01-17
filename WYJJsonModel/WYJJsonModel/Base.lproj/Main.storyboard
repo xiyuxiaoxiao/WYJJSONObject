@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--原始数据-->
         <scene sceneID="ulM-4r-HQQ">
             <objects>
                 <viewController id="ZZa-xi-Kb5" customClass="SeconderVC" sceneMemberID="viewController">
@@ -23,32 +23,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YVI-CD-0K5">
-                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <rect key="frame" x="10" y="100" width="355" height="508"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="原始数据JSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioG-IC-hLg">
-                                <rect key="frame" x="65" y="43" width="114" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原始数据JSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioG-IC-hLg">
+                                <rect key="frame" x="130.5" y="50" width="114" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V9P-SH-7dU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.98727482560000002" green="0.2144777179" blue="0.014838830569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90814122180000001" green="1" blue="0.89068656160000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="YVI-CD-0K5" firstAttribute="leading" secondItem="Ub5-fI-suC" secondAttribute="leading" id="H1C-md-vfo"/>
-                            <constraint firstItem="PuX-Rk-vra" firstAttribute="top" secondItem="YVI-CD-0K5" secondAttribute="bottom" id="PWY-em-Mlu"/>
-                            <constraint firstAttribute="trailing" secondItem="YVI-CD-0K5" secondAttribute="trailing" id="WAI-Ph-LCs"/>
+                            <constraint firstItem="YVI-CD-0K5" firstAttribute="leading" secondItem="Ub5-fI-suC" secondAttribute="leading" constant="10" id="H1C-md-vfo"/>
+                            <constraint firstItem="PuX-Rk-vra" firstAttribute="top" secondItem="YVI-CD-0K5" secondAttribute="bottom" constant="10" id="PWY-em-Mlu"/>
+                            <constraint firstItem="ioG-IC-hLg" firstAttribute="centerX" secondItem="Ub5-fI-suC" secondAttribute="centerX" id="U81-ni-rua"/>
+                            <constraint firstAttribute="trailing" secondItem="YVI-CD-0K5" secondAttribute="trailing" constant="10" id="WAI-Ph-LCs"/>
                             <constraint firstItem="YVI-CD-0K5" firstAttribute="top" secondItem="Lm2-ri-v4A" secondAttribute="bottom" constant="100" id="fg4-PG-lWx"/>
+                            <constraint firstItem="YVI-CD-0K5" firstAttribute="top" secondItem="ioG-IC-hLg" secondAttribute="bottom" constant="20" id="mBD-YO-ZIZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="y9G-a4-FqS"/>
+                    <tabBarItem key="tabBarItem" title="原始数据" id="oWl-U8-nNm">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -59,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="-577" y="-297"/>
         </scene>
-        <!--Item-->
+        <!--json转换模型-->
         <scene sceneID="5cs-hO-uio">
             <objects>
                 <viewController id="41l-Ud-EXf" customClass="FirstVC" sceneMemberID="viewController">
@@ -72,32 +78,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KDP-E9-0zV">
-                                <rect key="frame" x="16" y="100" width="343" height="567"/>
+                                <rect key="frame" x="16" y="100" width="343" height="508"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gP7-ea-YcS">
-                                <rect key="frame" x="70" y="28" width="121" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="打印json转化结果"/>
-                                <connections>
-                                    <action selector="pringResult:" destination="41l-Ud-EXf" eventType="touchUpInside" id="j3G-hm-xnS"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打印结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMc-L1-ksn">
+                                <rect key="frame" x="152.5" y="50" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="b0c-LW-T9p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98727482560000002" green="0.2144777179" blue="0.014838830569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078430000004" green="0.91372549020000005" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="m7d-6v-txm" firstAttribute="top" secondItem="KDP-E9-0zV" secondAttribute="bottom" id="9tu-J5-1Ns"/>
+                            <constraint firstItem="KDP-E9-0zV" firstAttribute="top" secondItem="IMc-L1-ksn" secondAttribute="bottom" constant="20" id="0QJ-Qd-2xH"/>
+                            <constraint firstItem="m7d-6v-txm" firstAttribute="top" secondItem="KDP-E9-0zV" secondAttribute="bottom" constant="10" id="9tu-J5-1Ns"/>
                             <constraint firstItem="KDP-E9-0zV" firstAttribute="leading" secondItem="VzR-md-o4q" secondAttribute="leadingMargin" id="NYh-g1-MHH"/>
                             <constraint firstItem="KDP-E9-0zV" firstAttribute="top" secondItem="rfa-kI-MTl" secondAttribute="bottom" constant="100" id="fT3-el-ocR"/>
+                            <constraint firstItem="IMc-L1-ksn" firstAttribute="centerX" secondItem="VzR-md-o4q" secondAttribute="centerX" id="tae-o9-1fK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KDP-E9-0zV" secondAttribute="trailing" id="y8a-Hx-iTK"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rFX-26-t2C"/>
+                    <tabBarItem key="tabBarItem" title="json转换模型" image="nil" id="tYM-9p-KRx">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -127,4 +138,7 @@
             <point key="canvasLocation" x="-1329" y="-575"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nil" width="45" height="45"/>
+    </resources>
 </document>

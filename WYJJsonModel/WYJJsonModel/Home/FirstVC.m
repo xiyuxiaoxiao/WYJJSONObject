@@ -19,8 +19,10 @@
     [super viewDidLoad];
     
     self.textView.userInteractionEnabled = NO;
+    
+    [self creatModel];
 }
-- (IBAction)pringResult:(id)sender {
+- (void)creatModel {
 
     NSString *path = [[NSBundle mainBundle] pathForResource:@"jsontext" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:path];
@@ -29,8 +31,7 @@
     
     NSLog(@"%@",jsonObject);
     
-    ClassModel *model = [[ClassModel alloc] init];
-    [model creatWithDict:jsonObject];
+    ClassModel *model = [ClassModel creatWithDict:jsonObject];
     NSLog(@"%@",model);
     
     NSString *str = [NSString stringWithFormat:@"%@",model];

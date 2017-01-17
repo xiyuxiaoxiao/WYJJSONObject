@@ -10,6 +10,13 @@
 #import <objc/runtime.h>
 
 @implementation WYJJsonObject
+
++(instancetype)creatWithDict:(NSDictionary *)dict {
+    WYJJsonObject *object = [[self alloc] init];
+    [object creatWithDict:dict];
+    return object;
+}
+
 -(void)creatWithDict:(NSDictionary *)dict {
     
     if (![dict isKindOfClass:[NSDictionary class]]) {
@@ -43,8 +50,9 @@
             if ([[dict objectForKey:propertyName] isKindOfClass:[NSArray class]]) {
                 for (NSDictionary *subDict in [dict objectForKey:propertyName]) {
                     //此处不用在判断字典类型 因为在creatWithDict中 一开始 就已经判断了
-                    NSObject *subModel = [[propertyClass alloc] init];
-                    [subModel performSelector:@selector(creatWithDict:) withObject:subDict];
+                    WYJJsonObject *subModel = [[propertyClass alloc] init];
+                    [subModel creatWithDict:subDict];
+//                    [subModel performSelector:@selector(creatWithDict:) withObject:subDict];
                     [subArray addObject:subModel];
                 }
                 
@@ -63,8 +71,9 @@
             //自定义类
             if ([propertyClass isSubclassOfClass:[WYJJsonObject class]]) {
                 NSDictionary *subDict = [dict objectForKey:propertyName];
-                NSObject *subModel = [[propertyClass alloc] init];
-                [subModel performSelector:@selector(creatWithDict:) withObject:subDict];
+                WYJJsonObject *subModel = [[propertyClass alloc] init];
+                [subModel creatWithDict:subDict];
+//                [subModel performSelector:@selector(creatWithDict:) withObject:subDict];
                 [self setValue:subModel forKey:propertyName];
                 
                 continue;
