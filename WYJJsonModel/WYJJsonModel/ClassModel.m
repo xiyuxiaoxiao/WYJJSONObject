@@ -20,7 +20,7 @@
 
 
 -(NSString *)description {
-    return [NSString stringWithFormat:@" name:%@\n student:\n%@ \n teacher:\n%@", self.name,self.student,self.teacher];
+    return [NSString stringWithFormat:@"**********classModel*************\n name:%@\n student:\n%@ \n teacher:\n%@", self.name,self.student,self.teacher];
 }
 
 @end

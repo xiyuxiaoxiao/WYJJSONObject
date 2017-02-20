@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.textView.userInteractionEnabled = NO;
+    self.textView.editable = NO;
     
     [self creatModel];
 }

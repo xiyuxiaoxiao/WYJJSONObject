@@ -7,9 +7,10 @@
 //
 
 #import "WYJJsonObject.h"
-
+@class ClassModel;
 @interface Teacher : WYJJsonObject
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *sex;
 @property (nonatomic, copy) NSString *cource;
+@property (nonatomic, strong) ClassModel *classM;
 @end

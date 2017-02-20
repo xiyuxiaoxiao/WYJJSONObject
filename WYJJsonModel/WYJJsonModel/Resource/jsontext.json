@@ -8,9 +8,25 @@
                     }, []
                 ],
     "teacher": {
-                "name": "YangTeacher",
+                "name": "张老师",
                 "sex": "男",
-                "cource": "数学"
+                "cource": "数学",
+                "class":{
+                            "student": [{
+                                        "name": "xiaoming",
+                                        "age": 20,
+                                        }, {
+                                        "name": "xiaohong",
+                                        "age": 21,
+                                        }, []
+                                        ],
+                            "teacher": {
+                                "name": "王老师",
+                                "sex": "男",
+                                "cource": "物理"
+                            },
+                            "name": "三班"
+                        }
                 },
     "name": "二班"
 }

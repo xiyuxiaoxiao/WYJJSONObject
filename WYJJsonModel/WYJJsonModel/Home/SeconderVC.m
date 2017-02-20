@@ -20,7 +20,7 @@
     
     [self readJson];
     
-    self.textView.userInteractionEnabled = NO;
+    self.textView.editable = NO;
 }
 
 -(void)readJson {
