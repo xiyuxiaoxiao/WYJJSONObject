@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8383E7D21F1CC35400D9895C /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8383E7D11F1CC35400D9895C /* NullSafe.m */; };
 		839026E11E2C98F3000F8952 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 839026E01E2C98F3000F8952 /* main.m */; };
 		839026E41E2C98F3000F8952 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 839026E31E2C98F3000F8952 /* AppDelegate.m */; };
 		839026EA1E2C98F3000F8952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839026E81E2C98F3000F8952 /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8383E7D11F1CC35400D9895C /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+		8383E7D31F1CC4B100D9895C /* NullOptimizationScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NullOptimizationScheme.h; sourceTree = "<group>"; };
 		839026DC1E2C98F3000F8952 /* WYJJsonModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYJJsonModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839026E01E2C98F3000F8952 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		839026E21E2C98F3000F8952 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8383E7D01F1CC35400D9895C /* NullSafe */ = {
+			isa = PBXGroup;
+			children = (
+				8383E7D11F1CC35400D9895C /* NullSafe.m */,
+			);
+			path = NullSafe;
+			sourceTree = "<group>";
+		};
 		839026D31E2C98F3000F8952 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +180,8 @@
 			children = (
 				839027141E2C9A04000F8952 /* WYJJsonObject.h */,
 				839027131E2C9A04000F8952 /* WYJJsonObject.m */,
+				8383E7D31F1CC4B100D9895C /* NullOptimizationScheme.h */,
+				8383E7D01F1CC35400D9895C /* NullSafe */,
 			);
 			path = WYJJSONObject;
 			sourceTree = "<group>";
@@ -331,6 +344,7 @@
 			files = (
 				839027281E2CB4C8000F8952 /* SeconderVC.m in Sources */,
 				8390271E1E2C9CE6000F8952 /* Teacher.m in Sources */,
+				8383E7D21F1CC35400D9895C /* NullSafe.m in Sources */,
 				8390271B1E2C9C25000F8952 /* StudentModel.m in Sources */,
 				839027181E2C9C1A000F8952 /* ClassModel.m in Sources */,
 				839027151E2C9A04000F8952 /* WYJJsonObject.m in Sources */,

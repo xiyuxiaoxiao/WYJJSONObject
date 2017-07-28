@@ -100,6 +100,14 @@
             if ([dict objectForKey:jsonPropertyName] != nil) {
                 [self setValue:[dict objectForKey:jsonPropertyName] forKey:propertyName];
             }
+            // 需要对后台返回的数据进行判断null
+            id value = [dict objectForKey:jsonPropertyName];
+            //更好的办法 判断value的值是否与当前设置的类型匹配 否则不设置 但是只能是基本类型 不出出现数组字典 因为如果会出现的话 就需要在创建 子 model：
+//            if ([value isKindOfClass:propertyClass]) {   
+//            }
+            if (value != nil && value != NULL && NO == [value isEqual:[NSNull null]] ) {
+                [self setValue:[dict objectForKey:jsonPropertyName] forKey:propertyName];
+            }
         }
     }
 }
