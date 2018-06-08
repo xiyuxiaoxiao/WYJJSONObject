@@ -38,5 +38,4 @@
     self.textView.text = str;
 }
 
-
 @end
